@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/damege.css">
+    <link rel="stylesheet" href="css/umamusu.css">
+    <script src="js/umamusu_data.json.js"></script>
+    <script src="js/umamusu_train.js"></script>
+    <script src="js/umamusu_train_total.js"></script>
+    <script src="js/umamusu_train_normal.js"></script>
+    <script src="js/umamusu.js"></script>
+    <meta charset="utf-8">
+    <title>ウマ娘トレーニング計算</title>
+  </head>
+  <body class="gradient">
+    <h1>ウマ娘トレーニング計算</h1>
+    更新日：<time id="modify"></time>
+    <p>ウマ娘のトレーニング時の効果値を計算できます</p>
+    <p>計算するサポートカードを選んでください</p>
+    <p>※注釈がない限り4凸です</p>
+    <p>※グランドマスターズシナリオのみ対応です</p>
+    <div>
+        <dl>
+            <dt>計算タイプ</dt>
+            <dd><input type="radio" id="comparison" name="chk_type" checked>比較</dd>
+            <dd><input type="radio" id="total" name="chk_type">合算値</dd>
+            <dd><input type="radio" id="normal" name="chk_type">通常の友情トレーニング</dd>
+        </dl>
+        <dl>
+            <dt>成長率</dt>
+            <dd>スピード：<input type="number" id="speed_growth" name="chk_growth" min="0" value="0" required>%</dd>
+            <dd>スタミナ：<input type="number" id="stamina_growth" name="chk_growth" min="0" value="0" required>%</dd>
+            <dd>　パワー：<input type="number" id="power_growth" name="chk_growth" min="0" value="0" required>%</dd>
+            <dd>　　根性：<input type="number" id="guts_growth" name="chk_growth" min="0" value="0" required>%</dd>
+            <dd>　　賢さ：<input type="number" id="cleverness_growth" name="chk_growth" min="0" value="0" required>%</dd>
+        </dl>
+        <dl>
+            <dt>調子</dt>
+            <dd><input type="radio" id="zekotyo" name="chk_condition" checked>絶好調</dd>
+            <dd><input type="radio" id="kotyo" name="chk_condition">好調</dd>
+            <dd><input type="radio" id="futu" name="chk_condition">普通</dd>
+            <dd><input type="radio" id="futyo" name="chk_condition">不調</dd>
+            <dd><input type="radio" id="zefutyo" name="chk_condition">絶不調</dd>
+        </dl>
+        <dl>
+            <dt>トレーニングレベル</dt>
+            <dd><input type="radio" id="train5" name="chk_training" checked>レベル5</dd>
+            <dd><input type="radio" id="train4" name="chk_training">レベル4</dd>
+            <dd><input type="radio" id="train3" name="chk_training">レベル3</dd>
+            <dd><input type="radio" id="train2" name="chk_training">レベル2</dd>
+            <dd><input type="radio" id="train1" name="chk_training">レベル1</dd>
+        </dl>
+        <dl>
+            <dt>スピード</dt>
+            <dd><input type="checkbox" id="kitasan" name="chk_support">キタサンブラック</dd>
+            <dd><input type="checkbox" id="maruzen" name="chk_support">マルゼンスキー</dd>
+            <dd><input type="checkbox" id="takion" name="chk_support">アグネスタキオン</dd>
+            <dd><input type="checkbox" id="zyanpoke" name="chk_support">ジャングルポケット</dd>
+        </dl>
+        <dl>
+            <dt>スタミナ</dt>
+            <dd><input type="checkbox" id="kuriku" name="chk_support">スーパークリーク</dd>
+        </dl>
+        <dl>
+            <dt>パワー</dt>
+            <dd><input type="checkbox" id="ruby" name="chk_support">ダイイチルビー</dd>
+        </dl>
+        <dl>
+            <dt>根性</dt>
+            <dd><input type="checkbox" id="tigezo" name="chk_support">ウイニングチケット</dd>
+        </dl>
+        <dl>
+            <dt>賢さ</dt>
+            <dd><input type="checkbox" id="fine" name="chk_support">ファインモーション</dd>
+            <dd><input type="checkbox" id="sibi" name="chk_support">ミスターシービー</dd>
+            <dd><input type="checkbox" id="ramonu" name="chk_support">メジロラモーヌ</dd>
+            <dd><input type="checkbox" id="sirius" name="chk_support">シリウスシンボリ</dd>
+        </dl>
+        <dl>
+            <dt>友人</dt>
+            <dd><input type="checkbox" id="megami" name="chk_support">三女神</dd>
+            <dd><input type="checkbox" id="megami1" name="chk_support">三女神(1凸)</dd>
+            <dd><input type="checkbox" id="megami0" name="chk_support">三女神(無凸)</dd>
+        </dl>
+    </div>
+    <div>
+        <input type="button" value="決定" onclick="buttonClick()">
+    </div>
+    <div id="support_text"></div>
+    
+  <script>
+  /* 更新日の取得 */
+  const last = new Date(document.lastModified);
+  const year = last.getFullYear();
+  const month = last.getMonth() + 1;
+  const date = last.getDate();
+  /* 日付を書き換える */
+  const target = document.getElementById('modify');
+  target.textContent = year + '-' + month + '-' + date;
+  </script>
+  </body>
+</html>

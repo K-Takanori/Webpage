@@ -1,0 +1,55 @@
+.chief_box1{
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+}
+.chief_box2{
+    margin-top: 0px;
+    background-color: mistyrose;
+}
+.sub_box1{
+    background-color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+}
+.sub_box2{
+    background-color: lightcyan;
+}
+.mem_box1{
+    background-color: green;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+}
+.mem_box2{
+    background-color: honeydew;
+}
+.select{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+.green {
+    color: green;
+}
+.white {
+    color: white;
+}
+.zero_margin{
+    margin: 0px;
+    padding-bottom: 15px;
+}
+.zero_margin dt{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}

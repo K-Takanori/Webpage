@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/test.js"></script>
+    <meta charset="utf-8">
+    <title>秘密結社MMWのページ</title>
+  </head>
+  <body class="gradient">
+    <h1>秘密結社MMW</h1>
+ <p>ここは秘密結社MMWのページです！</p>
+ <p>右のメニューバーから各ページに飛んでください</p>
+ <div class="container">
+ <a href="https://twitter.com/Gl5xOa" target="_blank">ギルド公式Twitter</a>
+ <a href="https://www.youtube.com/channel/UCH6PA6-NFuc-jmf073Aq3ig/featured" target="_blank">ギルド公式Youtube</a>
+</div> 
+ <div class="sub_title">ギルド内お知らせ</div>
+  <dl class="notice">
+  <dt>今月のカスタム日程</dt>
+  <dd>未定</dd>
+  <dt>今年の大合戦日程</dt>
+  <dd>9月</dd>
+  </dl>
+  <div class="box">
+  <dt class="bold_underline">更新履歴</dt>
+  <dt>2023/06/20：色々と更新</dt>
+  <dt>2023/04/18：ギルド紹介を更新</dt>
+  <dt>2023/04/18：お役立ちツールを更新</dt>
+  <dt>2023/04/18：ギルドメンバーを更新</dt>
+  <dt>2023/04/18：サイトをオープンしました！</dt>
+  </div>
+  <div class="container">
+  管理者：たぁぽぽ
+  </div>
+  更新日：<time id="modify"></time>
+  
+  <script>
+  /* 更新日の取得 */
+  const last = new Date(document.lastModified);
+  const year = last.getFullYear();
+  const month = last.getMonth() + 1;
+  const date = last.getDate();
+  /* 日付を書き換える */
+  const target = document.getElementById('modify');
+  target.textContent = year + '-' + month + '-' + date;
+  </script>
+     <div id="nav-wrapper" class="nav-wrapper">
+      <div class="hamburger" id="js-hamburger">
+        <span class="hamburger__line hamburger__line--1"></span>
+        <span class="hamburger__line hamburger__line--2"></span>
+        <span class="hamburger__line hamburger__line--3"></span>
+      </div>
+      <nav class="sp-nav">
+        <ul>
+          <li><a href="http://yakummw.html.xdomain.jp">ホーム</a></li>
+          <li><a href="./content.html">活動内容</a></li>
+          <li><a href="./member.html">ギルドメンバー</a></li>
+          <li><a href="./season.html">シーズン情報</a></li>   
+          <li><a href="./tool.html">お役立ちツール</a></li>       
+        </ul>
+      </nav>
+      <div class="black-bg" id="js-black-bg"></div>
+     </div>  
+
+  </body>
+</html>

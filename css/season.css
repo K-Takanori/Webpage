@@ -1,0 +1,38 @@
+.box1{
+    background-color: #EDF7FF;
+}
+
+.box2{
+    left: 50px;
+    position: relative;
+}
+
+.stage_rote{
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+}
+
+tr {
+    text-align: center;
+}
+
+.table1 {
+    border-collapse: collapse;
+    border: solid 3px orange;
+    width: 400px;
+    height: 100px;
+}
+table th, table td {
+    border: dashed 2px pink;
+
+}
+.table2{
+    border-collapse: collapse;
+    border: solid 3px yellowgreen;
+    width: 400px;
+    height: 180px;
+}

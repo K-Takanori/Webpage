@@ -1,0 +1,72 @@
+.box7{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    width: 80px;
+    color: #474747;
+    background: whitesmoke;/*背景色*/
+    border-left: double 7px #4ec4d3;/*左線*/
+    border-right: double 7px #4ec4d3;/*右線*/
+}
+.box7 p {
+    text-align: center;
+    margin: 0; 
+    padding: 0;
+    font-weight: bold;
+}
+
+.box19 {
+    position: relative;
+    padding:0.25em 1em;
+    width: 300px;
+    height: 50px;
+    margin: 50px 0px;
+}
+.box19:before,.box19:after{ 
+    content:'';
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+}
+.box19:before{
+    border-left: solid 2px #5767bf;
+    border-top: solid 2px #5767bf;
+    top:0;
+    left: 0;
+}
+.box19:after{
+    border-right: solid 2px #5767bf;
+    border-bottom: solid 2px #5767bf;
+    bottom:0;
+    right: 0;
+}
+.box19 p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.box27 {
+    position: relative;
+    margin: 4em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #62c1ce;
+    width: 200px;
+}
+.box27 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #62c1ce;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.box27 ul {
+    margin: 0; 
+    padding: 0;
+}

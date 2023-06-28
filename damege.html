@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/damege.css">
+    <script src="js/test.js"></script>
+    <script src="js/damege.js"></script>
+    <title>ダメージ計算ツール</title>
+  </head>
+  <body class="gradient">
+    <h1>近距離ダメージ計算ツール</h1>
+    <p>近距離の火力計算を行えます</p>
+    <p>採用するカードを選んでください(注:計算する際のカードレベルは全て60、チームレベルは1です)</p>
+    <div>
+        <dl>
+            <dt>フルーク系</dt>
+            <dd><input type="checkbox" id="fluke_red" name="chk1">フルーク</dd>
+            <dd><input type="checkbox" id="fluke_green" name="chk1">緑フルーク</dd>
+            <dd><input type="checkbox" id="fluke_blue" name="chk1">青フルーク</dd>
+            <dd><input type="checkbox" id="fluke_zisho" name="chk1">自傷フルーク</dd>
+        </dl>
+        <dl>
+            <dt>カノーネ系</dt>
+            <dd><input type="checkbox" id="kanone_blue" name="chk1">カノーネ</dd>
+            <dd><input type="checkbox" id="kanone_green" name="chk1">緑カノーネ</dd>
+            <dd><input type="checkbox" id="kanone_red" name="chk1">赤カノーネ</dd>
+            <dd><input type="checkbox" id="kanone_zisho" name="chk1">自傷カノーネ</dd>
+        </dl>
+        <dl>
+            <dt>始龍系</dt>
+            <dd><input type="checkbox" id="siryu_blue" name="chk1">始龍</dd>
+            <dd><input type="checkbox" id="siryu_green" name="chk1">緑始龍</dd>
+            <dd><input type="checkbox" id="siryu_red" name="chk1">赤始龍</dd>
+        </dl>
+        <dl>
+            <dt>ガード系</dt>
+            <dd><input type="checkbox" id="eager_UR" name="chk1">URイェーガー</dd>
+            <dd><input type="checkbox" id="eager" name="chk1">イェーガー</dd>
+            <dd><input type="checkbox" id="diva" name="chk1">ディーバ</dd>
+        </dl>
+        <dl>
+            <dt>回復系</dt>
+            <dd><input type="checkbox" id="gabu_blue" name="chk1">ガブリエル</dd>
+            <dd><input type="checkbox" id="gabu_green" name="chk1">ギアメ</dd>
+            <dd><input type="checkbox" id="gabu_red" name="chk1">赤ガブ</dd>
+            <dd><input type="checkbox" id="sakura_green" name="chk1">桜</dd>
+            <dd><input type="checkbox" id="sakura_red" name="chk1">赤桜</dd>
+            <dd><input type="checkbox" id="mimimi_red" name="chk1">みみみ</dd>
+            <dd><input type="checkbox" id="mimimi_green" name="chk1">緑みみみ</dd>
+        </dl>
+    </div>
+    <div>
+        <input type="button" value="決定" onclick="buttonClick()">
+    </div>
+    <div id="adam"></div>
+    <div id="tadaomi"></div>
+    <div id="ryu"></div>
+    <div id="saber"></div>
+     <div id="nav-wrapper" class="nav-wrapper">
+      <div class="hamburger" id="js-hamburger">
+        <span class="hamburger__line hamburger__line--1"></span>
+        <span class="hamburger__line hamburger__line--2"></span>
+        <span class="hamburger__line hamburger__line--3"></span>
+      </div>
+      <nav class="sp-nav">
+        <ul>
+          <li><a href="./index.html">ホーム</a></li>
+          <li><a href="./content.html">活動内容</a></li>
+          <li><a href="./member.html">ギルドメンバー</a></li>
+          <li><a href="./season.html">シーズン情報</a></li>
+          <li><a href="./tool.html">お役立ちツール</a></li>
+        </ul>
+      </nav>
+      <div class="black-bg" id="js-black-bg"></div>
+     </div>  
+
+  </body>
+</html>
